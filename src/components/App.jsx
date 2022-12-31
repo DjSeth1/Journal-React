@@ -8,13 +8,14 @@ import Navbar from './Navbar'
 const App = () => {
   return (
     <>
-        <Navbar />
+
         <BrowserRouter>
+            <Navbar />
             <Routes>
-                <Route path= '/' element= {<Home />} />
-                <Route path= '/category/' element= {<CategorySelection />} />
-                <Route path= '/entry/new' element= {<NewEntry />} />
-                <Route path= '*' element = {<h4>Page not found!</h4>} /> 
+                <Route path='/' element= {<Home />} />
+                <Route path='/category/' element= {<CategorySelection />} />
+                <Route path='/entry/new/:category' element= {<NewEntry />} />
+                <Route path='*' element = {<h4>Page not found!</h4>} /> 
             </Routes>
         </BrowserRouter>
 
