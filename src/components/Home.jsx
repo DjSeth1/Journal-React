@@ -9,9 +9,7 @@ const Home = ({ entries }) => {
             <p key={index}>
                 <Link to={`entry/${index}`}>{entry.content}</Link>
             </p>
-            )
-            )}
-
+            ))}
         </>
     )
 }
